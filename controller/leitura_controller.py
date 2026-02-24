@@ -7,6 +7,8 @@ leitura_bp = Blueprint("leitura", __name__)
 def receber_dados():
     dados = request.json
 
+    print("📥 JSON recebido:", dados)
+
     try:
         processar_leitura(dados)
         return jsonify({"status": "ok"}), 200

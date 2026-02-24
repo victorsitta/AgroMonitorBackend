@@ -5,4 +5,4 @@ class Config:
     DB_HOST = "localhost"
     DB_NAME = "Silo"
     DB_USER = "postgres"
-    DB_PASSWORD = "SUA_SENHA_AQUI"
+    DB_PASSWORD = "351497"
