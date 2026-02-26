@@ -1,5 +1,5 @@
 
-import SectionHero from "../components/sections/Index/SectionHero"
+import SectionHero from "../components/sections/Index/HeroSection"
 
 
 export default function Index() {
