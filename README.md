@@ -55,28 +55,28 @@ ________________________________________
 
 ### **4. Tecnologias Utilizadas**
 Hardware
-•	ESP32
-•	Sensores ambientais (exemplo: temperatura e umidade)
+- ESP32
+- Sensores ambientais (exemplo: temperatura e umidade)
 Backend
-•	Python
-•	Framework para API REST (exemplo: Flask ou FastAPI)
+- Python
+- Framework para API REST (exemplo: Flask ou FastAPI)
 Banco de Dados
-•	Banco relacional ou não relacional
-•	Estrutura para armazenamento de leituras
+- Banco relacional ou não relacional
+- Estrutura para armazenamento de leituras
 Frontend
-•	React
-•	TypeScript
-•	TailwindCSS
+- React
+- TypeScript
+- TailwindCSS
 ________________________________________
 
 ### **5. Funcionalidades Implementadas**
-•	Coleta automática de dados via ESP32
-•	Envio periódico para o backend
-•	Armazenamento em banco de dados
-•	Consulta de histórico de medições
-•	Exibição em dashboard web
-•	Indicadores de status do sistema
-•	Estrutura preparada para expansão
+- Coleta automática de dados via ESP32
+- Envio periódico para o backend
+- Armazenamento em banco de dados
+- Consulta de histórico de medições
+- Exibição em dashboard web
+- Indicadores de status do sistema
+- Estrutura preparada para expansão
 ________________________________________
 
 ### **6. Estrutura do Projeto**
@@ -93,38 +93,38 @@ README.md
 ________________________________________
 
 ### **7. Conceitos Aplicados**
-•	Arquitetura em camadas
-•	Separação de responsabilidades
-•	Comunicação HTTP entre dispositivo e servidor
-•	Estruturação de API REST
-•	Persistência de dados
-•	Integração entre hardware e software
-•	Organização de projeto escalável
+- Arquitetura em camadas
+- Separação de responsabilidades
+- Comunicação HTTP entre dispositivo e servidor
+- Estruturação de API REST
+- Persistência de dados
+- Integração entre hardware e software
+- Organização de projeto escalável
 ________________________________________
 
 ### **8. Possíveis Evoluções**
-•	Implementação de autenticação JWT
-•	Sistema de alertas automáticos
-•	Dashboard com gráficos analíticos
-•	Controle de múltiplos dispositivos
-•	Deploy em ambiente de nuvem
-•	Monitoramento em tempo real via WebSocket
+- Implementação de autenticação JWT
+- Sistema de alertas automáticos
+- Dashboard com gráficos analíticos
+- Controle de múltiplos dispositivos
+- Deploy em ambiente de nuvem
+-	Monitoramento em tempo real via WebSocket
 ________________________________________
 
 ### **9. Aplicabilidade**
 A arquitetura proposta pode ser aplicada em:
-•	Monitoramento agrícola
-•	Controle ambiental
-•	Automação residencial
-•	Monitoramento industrial
-•	Projetos acadêmicos
+- Monitoramento agrícola
+- Controle ambiental
+- Automação residencial
+- Monitoramento industrial
+- Projetos acadêmicos
 ________________________________________
 
 ### **10. Conclusão**
 Este projeto demonstra a implementação de um sistema IoT completo, integrando:
-•	Dispositivo embarcado
-•	Backend em Python
-•	Banco de dados
-•	Interface web moderna
+- Dispositivo embarcado
+- Backend em Python
+- Banco de dados
+- Interface web moderna
 
-##**A arquitetura adotada segue princípios de organização e escalabilidade, permitindo expansão futura e aplicação em cenários reais.**
+## **A arquitetura adotada segue princípios de organização e escalabilidade, permitindo expansão futura e aplicação em cenários reais.**
