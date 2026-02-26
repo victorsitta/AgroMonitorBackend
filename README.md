@@ -1,5 +1,5 @@
-# IoT Sensor Monitor
-## ESP32 + Python Backend + Banco de Dados + Dashboard Web
+# **IoT Monitoring Platform**
+## **ESP32 + Flask + PostgreSQL + React (Em Desenvolvimento)**
 ________________________________________
 ### **1. Visão Geral**
 Este projeto implementa uma arquitetura completa de monitoramento IoT, integrando hardware embarcado, backend em Python, banco de dados e uma interface web para visualização de dados.
@@ -59,9 +59,9 @@ Hardware
 - Sensores ambientais (exemplo: temperatura e umidade)
 Backend
 - Python
-- Framework para API REST (exemplo: Flask ou FastAPI)
+- Framework para API REST (Flask)
 Banco de Dados
-- Banco relacional ou não relacional
+- PostgreSQL
 - Estrutura para armazenamento de leituras
 Frontend
 - React
@@ -81,15 +81,17 @@ ________________________________________
 
 ### **6. Estrutura do Projeto**
 /esp32
-Código responsável pela leitura dos sensores e envio via Wi-Fi
+→ Código para leitura dos sensores e envio via HTTP (JSON)
+
 /backend
-API desenvolvida em Python
-Endpoints para recebimento e consulta de dados
+→ API REST desenvolvida com Flask
+→ Endpoints para recebimento (POST) e consulta (GET)
+
 /database
-Configuração e estrutura do banco
+→ Script de criação de tabelas e estrutura do PostgreSQL
+
 /web
-Aplicação frontend responsável pela visualização
-README.md
+→ Aplicação React + TypeScript para visualização dos dados
 ________________________________________
 
 ### **7. Conceitos Aplicados**
@@ -121,7 +123,7 @@ A arquitetura proposta pode ser aplicada em:
 ________________________________________
 
 ### **10. Conclusão**
-Este projeto demonstra a implementação de um sistema IoT completo, integrando:
+Este projeto demonstra a construção de uma arquitetura IoT completa:
 - Dispositivo embarcado
 - Backend em Python
 - Banco de dados
