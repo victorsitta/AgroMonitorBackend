@@ -9,54 +9,48 @@ O objetivo é demonstrar, de forma prática, a integração entre dispositivos f
 ________________________________________
 
 ### **2. Arquitetura do Sistema**
-A arquitetura segue o seguinte fluxo:
-ESP32
-↓
-Envio de dados via Wi-Fi (HTTP / JSON)
-↓
-Backend em Python (API REST)
-↓
-Banco de Dados
-↓
-Aplicação Web (Dashboard)
+- A arquitetura segue o seguinte fluxo:
+
+ESP32 --> Envio de dados via Wi-Fi (HTTP / JSON) --> Backend em Python (API REST) --> Banco de Dados --> Aplicação Web (Dashboard)
+
 ________________________________________
 
 ### **Responsabilidade de cada camada**
 **ESP32**
-•	Coleta dados dos sensores
-•	Estrutura as informações em formato JSON
-•	Envia requisições HTTP ao backend
+- Coleta dados dos sensores
+- Estrutura as informações em formato JSON
+- Envia requisições HTTP ao backend
 
 **Backend (Python)**
-•	Recebe dados do dispositivo
-•	Realiza validação das informações
-•	Armazena registros no banco de dados
-•	Disponibiliza endpoints para consulta
+- Recebe dados do dispositivo
+- Realiza validação das informações
+- Armazena registros no banco de dados
+- Disponibiliza endpoints para consulta
 
 **Banco de Dados**
-•	Armazena histórico de leituras
-•	Permite consultas por período
-•	Organiza dados para futuras análises
+- Armazena histórico de leituras
+- Permite consultas por período
+- Organiza dados para futuras análises
 
 **Frontend Web**
-•	Consome a API do backend
-•	Exibe dados em tempo real
-•	Mostra status do sistema
-•	Apresenta histórico de medições
+- Consome a API do backend
+- Exibe dados em tempo real
+- Mostra status do sistema
+- Apresenta histórico de medições
 
 ________________________________________
 
 ### **3. Problema Abordado**
 Sistemas que realizam apenas leitura local de sensores apresentam limitações como:
-•	Ausência de histórico persistente
-•	Falta de monitoramento remoto
-•	Dados brutos sem validação
-•	Dificuldade de análise comparativa
+- Ausência de histórico persistente
+- Falta de monitoramento remoto
+- Dados brutos sem validação
+- Dificuldade de análise comparativa
 Este projeto resolve essas limitações ao implementar:
-•	Centralização de dados
-•	Persistência estruturada
-•	Separação de responsabilidades
-•	Visualização organizada
+- Centralização de dados
+- Persistência estruturada
+- Separação de responsabilidades
+- Visualização organizada
 ________________________________________
 
 ### **4. Tecnologias Utilizadas**
