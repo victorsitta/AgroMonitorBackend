@@ -1,12 +1,10 @@
 import express from "express";
-import routes from "./routes/routes.js";
+import router from "./routes/routes.js"; // Importa o centralizador
 
 const app = express();
-
-// middleware
 app.use(express.json());
 
-// rotas
-app.use(routes);
+// Monta todas as rotas a partir da raiz, pois os prefixos já estão no router
+app.use(router); 
 
 export default app;

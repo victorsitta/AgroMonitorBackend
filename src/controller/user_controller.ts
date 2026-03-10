@@ -10,10 +10,10 @@ export class UserController {
     async receberDados(req: Request, res: Response) {
 
         try {
-            const dados = req.body;
+            const dados: CreateUserDTO = req.body;
 
             await this.service.executar(dados)
-            return res.status(200).json({ status: "ok", message: "Leitura processada" });
+            return res.status(200).json({ status: "ok", message: "Usuário processado" });
 
         } catch (error: any) {
             return res.status(400).json({

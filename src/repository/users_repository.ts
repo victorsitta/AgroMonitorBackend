@@ -15,12 +15,12 @@ export class userRepository {
     }
 
     async createUser(user: CreateUserDTO) {
-        const result = await pool.query('INSERT INTO users (email, password, name) VALUES ($1, $2, $3) RETURNING *', [user.email, user.password]);
+        const result = await pool.query('INSERT INTO users (email, password) VALUES ($1, $2) RETURNING *', [user.email, user.password]);
         return result.rows[0];
     }
 
     async updateUser(id: number, user: UpdateUser) {
-        const result = await pool.query('UPDATE users SET email = $1, password = $2, name = $3 RETURNING *', [user.email, user.password, user.name]);
+        const result = await pool.query('UPDATE users SET email = $1, password = $2 WHERE id = $3 RETURNING *', [user.email, user.password]);
         return result.rows[0];
     }
 

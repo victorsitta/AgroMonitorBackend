@@ -4,8 +4,8 @@ import { UserController } from "../controller/user_controller.js";
 const router = Router();
 const userController = new UserController();
 
-// rota que recebe os dados do client.ts
-router.post("/dados/user", (req, res) => {
+// A URL final será http://localhost:3000/user
+router.post("/", (req, res) => {
   userController.receberDados(req, res);
 });
 

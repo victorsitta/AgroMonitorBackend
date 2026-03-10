@@ -2,8 +2,8 @@ import axios from 'axios';
 import type { Leitura } from '../src/types/graos/processarLeitura_interface.js'
 
 
-
-const URL = "http://localhost:3000/dados";
+const URL = "http://localhost:3000/dados";      // Para enviar SOJA, MILHO, etc.
+const URLUser = "http://localhost:3000/user";   // Para enviar email e password
 
 // Função para gerar números aleatórios (Equivalente ao random.uniform)
 const gerarValorAleatorio = (min: number, max: number): number => {
@@ -38,11 +38,10 @@ const enviarDados = async () => {
 
 
 //------------------------------------------------------users-------------------//
-const URLUser = "http://localhost:3000/dados/users";
 
 const enviarDadosUsers = async () => {
   const dados = {
-    email: 'joaositta28@gmail.com',
+    email: 'sittajoao28@gmail.com',
     password: '12345678',
   }
 
